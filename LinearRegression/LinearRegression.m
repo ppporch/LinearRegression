@@ -54,6 +54,10 @@
     [self.workingArray removeAllObjects];
 }
 
+- (NSArray *)getArray {
+    return [self.workingArray copy];
+}
+
 // The calculate method assumes that you have passed the x,y data in via the
 // addDataObject method. It sorts the array to make sure the x values are
 // in order and then returns a RegressionResult object

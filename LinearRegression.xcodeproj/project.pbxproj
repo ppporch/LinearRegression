@@ -17,6 +17,7 @@
 		013B5C9617F4CC7A004805DD /* DataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 013B5C9517F4CC7A004805DD /* DataItem.m */; };
 		013B5C9917F4CCA2004805DD /* LinearRegression.m in Sources */ = {isa = PBXBuildFile; fileRef = 013B5C9817F4CCA2004805DD /* LinearRegression.m */; };
 		013B5C9C17F4CCAA004805DD /* RegressionResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 013B5C9B17F4CCAA004805DD /* RegressionResult.m */; };
+		013B5C9E17F4D542004805DD /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 013B5C9D17F4D542004805DD /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		013B5C9817F4CCA2004805DD /* LinearRegression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinearRegression.m; sourceTree = "<group>"; };
 		013B5C9A17F4CCAA004805DD /* RegressionResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegressionResult.h; sourceTree = "<group>"; };
 		013B5C9B17F4CCAA004805DD /* RegressionResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegressionResult.m; sourceTree = "<group>"; };
+		013B5C9D17F4D542004805DD /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		013B5C7017F4CC5D004805DD /* LinearRegression */ = {
 			isa = PBXGroup;
 			children = (
+				013B5C9D17F4D542004805DD /* README.markdown */,
 				013B5C9417F4CC79004805DD /* DataItem.h */,
 				013B5C9517F4CC7A004805DD /* DataItem.m */,
 				013B5C9A17F4CCAA004805DD /* RegressionResult.h */,
@@ -221,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013B5C9E17F4D542004805DD /* README.markdown in Resources */,
 				013B5C8917F4CC5D004805DD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

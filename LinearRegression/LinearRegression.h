@@ -17,5 +17,6 @@
 - (void)addDataObject:(DataItem *)data;
 - (void)clear;
 - (RegressionResult *)calculate;
+- (NSArray *)getArray;
 
 @end
