@@ -53,17 +53,28 @@
 - (void)clear {
     [self.workingArray removeAllObjects];
 }
+
+// The calculate method assumes that you have passed the x,y data in via the
+// addDataObject method. It sorts the array to make sure the x values are
+// in order and then returns a RegressionResult object
+
 - (RegressionResult *)calculate {
     RegressionResult *result = [[RegressionResult alloc] init];
     NSInteger theNumber = [self.workingArray count];
+    NSSortDescriptor *sortDescriptor;
+    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"xValue"
+                                                 ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+    NSArray *sortedArray;
+    sortedArray = [self.workingArray sortedArrayUsingDescriptors:sortDescriptors];
     self.sumY = 0.0;
     self.sumX = 0.0;
     self.sumXY = 0.0;
     self.sumX2 = 0.0;
     self.sumY2 = 0.0;
     
-    for (DataItem *data in self.workingArray) {
-        _sumX = _sumX + data.xValue;
+    for (DataItem *data in sortedArray) {
+        self.sumX = self.sumX + data.xValue;
         self.sumY = self.sumY + data.yValue;
         self.sumXY = self.sumXY + (data.xValue * data.yValue);
         self.sumX2 = self.sumX2 + (data.xValue * data.xValue);
@@ -73,8 +84,6 @@
     result.intercept = ((self.sumY - (self.slope * self.sumX))/theNumber);
     result.correlation = ((theNumber * self.sumXY) - (self.sumX * self.sumY)) / (sqrt(theNumber * self.sumX2 - (self.sumX * self.sumX)) * sqrt(theNumber * self.sumY2 - (self.sumY * self.sumY)));
     return result;
-
-
 }
 
 - (RegressionResult *)calculateRegression:(NSArray *)theArray {
@@ -94,11 +103,11 @@
     self.sumY2 = 0.0;
 
     for (DataItem *data in theArray) {
-        _sumX = _sumX + data.xValue;
-        self.sumY = _sumY + data.yValue;
-        self.sumXY = _sumXY + (data.xValue * data.yValue);
-        self.sumX2 = _sumX2 + (data.xValue * data.xValue);
-        self.sumY2 = _sumY2 + (data.yValue * data.yValue);
+        self.sumX = self.sumX + data.xValue;
+        self.sumY = self.sumY + data.yValue;
+        self.sumXY = self.sumXY + (data.xValue * data.yValue);
+        self.sumX2 = self.sumX2 + (data.xValue * data.xValue);
+        self.sumY2 = self.sumY2 + (data.yValue * data.yValue);
     }
     result.slope = ((theNumber * self.sumXY) - self.sumX * self.sumY) / ((theNumber * self.sumX2) - (self.sumX * self.sumX));
     result.intercept = ((self.sumY - (self.slope * self.sumX))/theNumber);
