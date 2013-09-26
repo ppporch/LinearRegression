@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		013B5C6F17F4CC5D004805DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013B5C6E17F4CC5D004805DD /* Foundation.framework */; };
+		013B5C7417F4CC5D004805DD /* LinearRegression.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 013B5C7317F4CC5D004805DD /* LinearRegression.h */; };
+		013B5C7617F4CC5D004805DD /* LinearRegression.m in Sources */ = {isa = PBXBuildFile; fileRef = 013B5C7517F4CC5D004805DD /* LinearRegression.m */; };
+		013B5C7D17F4CC5D004805DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013B5C7C17F4CC5D004805DD /* XCTest.framework */; };
+		013B5C7E17F4CC5D004805DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013B5C6E17F4CC5D004805DD /* Foundation.framework */; };
+		013B5C8017F4CC5D004805DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013B5C7F17F4CC5D004805DD /* UIKit.framework */; };
+		013B5C8317F4CC5D004805DD /* libLinearRegression.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 013B5C6B17F4CC5D004805DD /* libLinearRegression.a */; };
+		013B5C8917F4CC5D004805DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 013B5C8717F4CC5D004805DD /* InfoPlist.strings */; };
+		013B5C8B17F4CC5D004805DD /* LinearRegressionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 013B5C8A17F4CC5D004805DD /* LinearRegressionTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		013B5C8117F4CC5D004805DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 013B5C6317F4CC5D004805DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 013B5C6A17F4CC5D004805DD;
+			remoteInfo = LinearRegression;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		013B5C6917F4CC5D004805DD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				013B5C7417F4CC5D004805DD /* LinearRegression.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		013B5C6B17F4CC5D004805DD /* libLinearRegression.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLinearRegression.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		013B5C6E17F4CC5D004805DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		013B5C7217F4CC5D004805DD /* LinearRegression-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinearRegression-Prefix.pch"; sourceTree = "<group>"; };
+		013B5C7317F4CC5D004805DD /* LinearRegression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinearRegression.h; sourceTree = "<group>"; };
+		013B5C7517F4CC5D004805DD /* LinearRegression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearRegression.m; sourceTree = "<group>"; };
+		013B5C7B17F4CC5D004805DD /* LinearRegressionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinearRegressionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		013B5C7C17F4CC5D004805DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		013B5C7F17F4CC5D004805DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		013B5C8617F4CC5D004805DD /* LinearRegressionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinearRegressionTests-Info.plist"; sourceTree = "<group>"; };
+		013B5C8817F4CC5D004805DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		013B5C8A17F4CC5D004805DD /* LinearRegressionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinearRegressionTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		013B5C6817F4CC5D004805DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013B5C6F17F4CC5D004805DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013B5C7817F4CC5D004805DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013B5C7D17F4CC5D004805DD /* XCTest.framework in Frameworks */,
+				013B5C8017F4CC5D004805DD /* UIKit.framework in Frameworks */,
+				013B5C7E17F4CC5D004805DD /* Foundation.framework in Frameworks */,
+				013B5C8317F4CC5D004805DD /* libLinearRegression.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013B5C6217F4CC5D004805DD = {
+			isa = PBXGroup;
+			children = (
+				013B5C7017F4CC5D004805DD /* LinearRegression */,
+				013B5C8417F4CC5D004805DD /* LinearRegressionTests */,
+				013B5C6D17F4CC5D004805DD /* Frameworks */,
+				013B5C6C17F4CC5D004805DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		013B5C6C17F4CC5D004805DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				013B5C6B17F4CC5D004805DD /* libLinearRegression.a */,
+				013B5C7B17F4CC5D004805DD /* LinearRegressionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		013B5C6D17F4CC5D004805DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				013B5C6E17F4CC5D004805DD /* Foundation.framework */,
+				013B5C7C17F4CC5D004805DD /* XCTest.framework */,
+				013B5C7F17F4CC5D004805DD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		013B5C7017F4CC5D004805DD /* LinearRegression */ = {
+			isa = PBXGroup;
+			children = (
+				013B5C7317F4CC5D004805DD /* LinearRegression.h */,
+				013B5C7517F4CC5D004805DD /* LinearRegression.m */,
+				013B5C7117F4CC5D004805DD /* Supporting Files */,
+			);
+			path = LinearRegression;
+			sourceTree = "<group>";
+		};
+		013B5C7117F4CC5D004805DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013B5C7217F4CC5D004805DD /* LinearRegression-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		013B5C8417F4CC5D004805DD /* LinearRegressionTests */ = {
+			isa = PBXGroup;
+			children = (
+				013B5C8A17F4CC5D004805DD /* LinearRegressionTests.m */,
+				013B5C8517F4CC5D004805DD /* Supporting Files */,
+			);
+			path = LinearRegressionTests;
+			sourceTree = "<group>";
+		};
+		013B5C8517F4CC5D004805DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				013B5C8617F4CC5D004805DD /* LinearRegressionTests-Info.plist */,
+				013B5C8717F4CC5D004805DD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		013B5C6A17F4CC5D004805DD /* LinearRegression */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013B5C8E17F4CC5D004805DD /* Build configuration list for PBXNativeTarget "LinearRegression" */;
+			buildPhases = (
+				013B5C6717F4CC5D004805DD /* Sources */,
+				013B5C6817F4CC5D004805DD /* Frameworks */,
+				013B5C6917F4CC5D004805DD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinearRegression;
+			productName = LinearRegression;
+			productReference = 013B5C6B17F4CC5D004805DD /* libLinearRegression.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		013B5C7A17F4CC5D004805DD /* LinearRegressionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 013B5C9117F4CC5D004805DD /* Build configuration list for PBXNativeTarget "LinearRegressionTests" */;
+			buildPhases = (
+				013B5C7717F4CC5D004805DD /* Sources */,
+				013B5C7817F4CC5D004805DD /* Frameworks */,
+				013B5C7917F4CC5D004805DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				013B5C8217F4CC5D004805DD /* PBXTargetDependency */,
+			);
+			name = LinearRegressionTests;
+			productName = LinearRegressionTests;
+			productReference = 013B5C7B17F4CC5D004805DD /* LinearRegressionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		013B5C6317F4CC5D004805DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Phillip Porch";
+			};
+			buildConfigurationList = 013B5C6617F4CC5D004805DD /* Build configuration list for PBXProject "LinearRegression" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 013B5C6217F4CC5D004805DD;
+			productRefGroup = 013B5C6C17F4CC5D004805DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				013B5C6A17F4CC5D004805DD /* LinearRegression */,
+				013B5C7A17F4CC5D004805DD /* LinearRegressionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		013B5C7917F4CC5D004805DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013B5C8917F4CC5D004805DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		013B5C6717F4CC5D004805DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013B5C7617F4CC5D004805DD /* LinearRegression.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		013B5C7717F4CC5D004805DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				013B5C8B17F4CC5D004805DD /* LinearRegressionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		013B5C8217F4CC5D004805DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 013B5C6A17F4CC5D004805DD /* LinearRegression */;
+			targetProxy = 013B5C8117F4CC5D004805DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		013B5C8717F4CC5D004805DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				013B5C8817F4CC5D004805DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		013B5C8C17F4CC5D004805DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		013B5C8D17F4CC5D004805DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		013B5C8F17F4CC5D004805DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LinearRegression.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinearRegression/LinearRegression-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		013B5C9017F4CC5D004805DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LinearRegression.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinearRegression/LinearRegression-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		013B5C9217F4CC5D004805DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinearRegression/LinearRegression-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LinearRegressionTests/LinearRegressionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		013B5C9317F4CC5D004805DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinearRegression/LinearRegression-Prefix.pch";
+				INFOPLIST_FILE = "LinearRegressionTests/LinearRegressionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		013B5C6617F4CC5D004805DD /* Build configuration list for PBXProject "LinearRegression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013B5C8C17F4CC5D004805DD /* Debug */,
+				013B5C8D17F4CC5D004805DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		013B5C8E17F4CC5D004805DD /* Build configuration list for PBXNativeTarget "LinearRegression" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013B5C8F17F4CC5D004805DD /* Debug */,
+				013B5C9017F4CC5D004805DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		013B5C9117F4CC5D004805DD /* Build configuration list for PBXNativeTarget "LinearRegressionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				013B5C9217F4CC5D004805DD /* Debug */,
+				013B5C9317F4CC5D004805DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 013B5C6317F4CC5D004805DD /* Project object */;
+}
