@@ -113,8 +113,8 @@
         self.sumX2 = self.sumX2 + (data.xValue * data.xValue);
         self.sumY2 = self.sumY2 + (data.yValue * data.yValue);
     }
-    result.slope = ((theNumber * self.sumXY) - self.sumX * self.sumY) / ((theNumber * self.sumX2) - (self.sumX * self.sumX));
-    result.intercept = ((self.sumY - (self.slope * self.sumX))/theNumber);
+    result.slope = ((theNumber * self.sumXY) - (self.sumX * self.sumY)) / ((theNumber * self.sumX2) - (self.sumX * self.sumX));
+    result.intercept = ((self.sumY * self.sumX2) - (self.slope * self.sumXY))/((theNumber * self.sumX2) - (self.sumX * self.sumX));
     result.correlation = ((theNumber * self.sumXY) - (self.sumX * self.sumY)) / (sqrt(theNumber * self.sumX2 - (self.sumX * self.sumX)) * sqrt(theNumber * self.sumY2 - (self.sumY * self.sumY)));
     return result;
 }
